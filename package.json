@@ -2,9 +2,11 @@
   "name": "netlify-express",
   "version": "0.1.0",
   "description": "Example of using ExpressJS with Netlify functions and on-demand builder functions.",
-  "main": "src/index.js",
+  "main": "src/posts/index.js",
   "scripts": {
-    "build": "NETLIFY_EXPERIMENTAL_PROCESS_DYNAMIC_IMPORTS=true netlify build"
+    "build": "NETLIFY_EXPERIMENTAL_PROCESS_DYNAMIC_IMPORTS=true netlify build",
+    "deploy": "netlify deploy",
+    "deploy:prod": "netlify deploy --prod"
   },
   "keywords": [
     "ExpressJS",
