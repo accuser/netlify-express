@@ -7,6 +7,6 @@ const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use("/.netlify/functions/posts", router);
+app.use("/posts", router);
 
 export default app;
